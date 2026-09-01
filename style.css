@@ -674,7 +674,7 @@ body {
 .case-study-hero h1 {
   margin: clamp(8px, 1vw, 20px) 0 clamp(24px, 2.5vw, 50px);
   font-size: clamp(42px, 4.1vw, 82px);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 1;
 }
@@ -1116,7 +1116,6 @@ body {
 
 .fixed-asset-case-study .case-study-hero h1 {
   margin-bottom: clamp(10px, 1.2vw, 20px);
-  font-weight: 400;
 }
 
 .design-wireframes .fixed-asset-video {
