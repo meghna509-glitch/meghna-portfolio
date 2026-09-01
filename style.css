@@ -1116,6 +1116,7 @@ body {
 
 .fixed-asset-case-study .case-study-hero h1 {
   margin-bottom: clamp(10px, 1.2vw, 20px);
+  font-weight: 400;
 }
 
 .design-wireframes .fixed-asset-video {
