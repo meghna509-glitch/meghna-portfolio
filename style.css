@@ -1430,7 +1430,7 @@ body {
 .fixed-opportunity-card p {
   margin: 0;
   color: #656565;
-  font-size: clamp(9px, 0.78vw, 15px);
+  font-size: clamp(11px, 0.95vw, 17px);
   line-height: 1.55;
   transition: transform 300ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -2070,5 +2070,2257 @@ body.fat-page {
     flex: 0 0 82%;
     min-height: 330px;
     scroll-snap-align: center;
+  }
+}
+
+/* Amazon Pay Thank You page case study */
+.amazon-case-study {
+  --amazon-ink: #20242a;
+  --amazon-muted: #777c82;
+  --amazon-yellow: #ffd814;
+  --amazon-yellow-soft: #fff8d8;
+  --amazon-green: #16883c;
+  --amazon-green-soft: #e9f8ee;
+  --amazon-line: #e7e7e4;
+  color: var(--amazon-ink);
+}
+
+.amazon-hero {
+  max-width: 1500px;
+}
+
+.amazon-hero h1 {
+  margin-bottom: clamp(16px, 1.8vw, 32px);
+  font-size: clamp(58px, 7.2vw, 138px);
+}
+
+.amazon-hero .case-study-summary {
+  max-width: 1120px;
+  font-size: clamp(16px, 1.35vw, 27px);
+}
+
+.amazon-project-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1100px;
+  margin-top: clamp(50px, 5vw, 90px);
+  border-top: 1px solid var(--amazon-line);
+  border-bottom: 1px solid var(--amazon-line);
+}
+
+.amazon-project-facts div {
+  padding: clamp(20px, 2vw, 34px) clamp(18px, 2.4vw, 44px);
+  border-left: 1px solid var(--amazon-line);
+}
+
+.amazon-project-facts div:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.amazon-project-facts span,
+.amazon-project-facts strong {
+  display: block;
+}
+
+.amazon-project-facts span {
+  margin-bottom: 7px;
+  color: #9b9b98;
+  font-size: clamp(10px, 0.75vw, 14px);
+}
+
+.amazon-project-facts strong {
+  font-size: clamp(13px, 1.05vw, 20px);
+  font-weight: 500;
+}
+
+.amazon-section-heading {
+  max-width: 1050px;
+}
+
+.amazon-section-heading h2 {
+  margin: clamp(12px, 1.2vw, 22px) 0 clamp(20px, 2vw, 34px);
+  font-size: clamp(38px, 4.2vw, 78px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1.02;
+}
+
+.amazon-section-heading > p:last-child {
+  max-width: 850px;
+  margin: 0;
+  color: var(--amazon-muted);
+  font-size: clamp(14px, 1.15vw, 22px);
+  line-height: 1.55;
+}
+
+.amazon-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(54px, 6vw, 100px);
+  border-block: 1px solid var(--amazon-line);
+}
+
+.amazon-metrics article {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2vw, 38px);
+  min-height: clamp(120px, 10vw, 190px);
+  padding: 0 clamp(22px, 3vw, 55px);
+  border-left: 1px solid var(--amazon-line);
+}
+
+.amazon-metrics article:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.amazon-metrics strong {
+  flex: 0 0 auto;
+  font-size: clamp(38px, 4vw, 76px);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+}
+
+.amazon-metrics span {
+  max-width: 230px;
+  color: #92928e;
+  font-size: clamp(11px, 0.9vw, 17px);
+  line-height: 1.4;
+}
+
+.amazon-story {
+  margin-top: clamp(50px, 6vw, 100px);
+  padding: clamp(38px, 5vw, 82px) clamp(24px, 4vw, 70px);
+  background: #f7f7f7;
+}
+
+.amazon-story-intro > p:last-child {
+  max-width: 1500px;
+  margin: clamp(22px, 2.5vw, 40px) 0 0;
+  color: #5f6366;
+  font-size: clamp(13px, 1.15vw, 22px);
+  line-height: 1.45;
+}
+
+.amazon-story-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(26px, 4vw, 78px);
+  margin-top: clamp(55px, 7vw, 115px);
+}
+
+.amazon-story-cards article {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: clamp(14px, 1.5vw, 26px) clamp(14px, 1.5vw, 26px) clamp(28px, 3vw, 50px);
+  background: #fff;
+}
+
+.amazon-story-image {
+  aspect-ratio: 1.48;
+  border-radius: clamp(14px, 1.8vw, 30px);
+  background-image: url("images/amazon-pay-ux-research/frame-1-user-scenario.png");
+  background-repeat: no-repeat;
+  background-size: 333.4% auto;
+}
+
+.amazon-story-image-start {
+  background-position: left bottom;
+}
+
+.amazon-story-image-middle {
+  background-position: center bottom;
+}
+
+.amazon-story-image-end {
+  background-position: right bottom;
+}
+
+.amazon-story-cards h3 {
+  margin: 0;
+  padding: clamp(22px, 2.5vw, 40px) clamp(6px, 0.8vw, 14px) 0;
+  font-size: clamp(15px, 1.45vw, 27px);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+}
+
+.amazon-story figure,
+.amazon-wide-figure,
+.amazon-customer-voice,
+.amazon-use-cases,
+.amazon-process-flows figure,
+.amazon-content-design figure,
+.amazon-impact figure {
+  margin: 0;
+}
+
+.amazon-story img,
+.amazon-wide-figure img,
+.amazon-customer-voice img,
+.amazon-use-cases img,
+.amazon-process-flows img,
+.amazon-content-design img,
+.amazon-impact figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.amazon-wide-figure {
+  margin-top: clamp(100px, 11vw, 190px);
+  padding: clamp(34px, 4vw, 70px);
+  border-radius: clamp(24px, 3vw, 48px);
+  background: #faf9f6;
+}
+
+.amazon-wide-figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: clamp(40px, 5vw, 80px);
+}
+
+.amazon-wide-figure figcaption span {
+  color: #92928e;
+  font-size: clamp(11px, 0.85vw, 16px);
+}
+
+.amazon-wide-figure figcaption strong {
+  max-width: 600px;
+  font-size: clamp(20px, 2vw, 38px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  text-align: right;
+}
+
+.amazon-research {
+  padding-top: clamp(40px, 4vw, 80px);
+}
+
+.amazon-insight-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  align-items: center;
+  gap: clamp(55px, 7vw, 130px);
+  margin-top: clamp(60px, 6vw, 110px);
+}
+
+.amazon-insight-list article {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: clamp(14px, 1.5vw, 28px);
+  padding: clamp(22px, 2vw, 34px) 0;
+  border-top: 1px solid var(--amazon-line);
+}
+
+.amazon-insight-list article:last-child {
+  border-bottom: 1px solid var(--amazon-line);
+}
+
+.amazon-insight-list article > span {
+  color: #b0b0ab;
+  font-size: clamp(12px, 0.9vw, 17px);
+}
+
+.amazon-insight-list h3 {
+  margin: 0 0 7px;
+  font-size: clamp(17px, 1.45vw, 27px);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.amazon-insight-list p {
+  max-width: 580px;
+  margin: 0;
+  color: var(--amazon-muted);
+  font-size: clamp(12px, 0.95vw, 18px);
+  line-height: 1.5;
+}
+
+.amazon-customer-voice {
+  padding: clamp(24px, 3vw, 54px);
+  border-radius: clamp(24px, 3vw, 48px);
+  background: var(--amazon-yellow-soft);
+}
+
+.amazon-opportunity {
+  box-sizing: border-box;
+  padding: clamp(50px, 6vw, 110px);
+  border-radius: clamp(28px, 4vw, 64px);
+  background: var(--amazon-ink);
+  color: #fff;
+}
+
+.amazon-opportunity .case-study-label {
+  color: #aaaeb2;
+}
+
+.amazon-opportunity-layout {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.55fr) minmax(0, 1.45fr);
+  align-items: end;
+  gap: clamp(25px, 4vw, 70px);
+  margin-top: clamp(55px, 7vw, 120px);
+}
+
+.amazon-opportunity-number {
+  color: var(--amazon-yellow);
+  font-size: clamp(110px, 14vw, 270px);
+  font-weight: 400;
+  letter-spacing: -0.09em;
+  line-height: 0.72;
+}
+
+.amazon-opportunity-layout h2 {
+  margin: 0 0 clamp(22px, 2.5vw, 42px);
+  font-size: clamp(37px, 4.2vw, 80px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1.02;
+}
+
+.amazon-opportunity-layout p {
+  max-width: 800px;
+  margin: 0;
+  color: #b8bbc0;
+  font-size: clamp(14px, 1.1vw, 21px);
+  line-height: 1.55;
+}
+
+.amazon-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 32px);
+  margin-top: clamp(75px, 8vw, 140px);
+}
+
+.amazon-principles article {
+  min-height: clamp(180px, 16vw, 300px);
+  padding: clamp(22px, 2.5vw, 42px);
+  border: 1px solid #41454b;
+  border-radius: clamp(18px, 2vw, 30px);
+}
+
+.amazon-principles span {
+  color: var(--amazon-yellow);
+  font-size: clamp(11px, 0.8vw, 15px);
+}
+
+.amazon-principles h3 {
+  margin: clamp(45px, 5vw, 92px) 0 12px;
+  font-size: clamp(20px, 1.8vw, 34px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.amazon-principles p {
+  margin: 0;
+  color: #aeb1b6;
+  font-size: clamp(11px, 0.85vw, 16px);
+  line-height: 1.5;
+}
+
+.amazon-use-cases {
+  margin-top: clamp(70px, 7vw, 125px);
+}
+
+.amazon-process-flows {
+  display: grid;
+  gap: clamp(65px, 7vw, 120px);
+  margin-top: clamp(90px, 10vw, 170px);
+}
+
+.amazon-process-flows figcaption {
+  margin-bottom: clamp(30px, 3vw, 55px);
+  color: #767a7d;
+  font-size: clamp(13px, 1vw, 19px);
+}
+
+.amazon-design {
+  padding-top: clamp(45px, 5vw, 85px);
+}
+
+.amazon-state-sequence {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 34px);
+  margin-top: clamp(70px, 7vw, 125px);
+}
+
+.amazon-state-sequence figure {
+  position: relative;
+  margin: 0;
+  padding: clamp(30px, 3vw, 52px) clamp(16px, 2vw, 34px) clamp(22px, 2vw, 36px);
+  overflow: hidden;
+  border-radius: clamp(20px, 2.2vw, 34px);
+  background: #f5f5f3;
+}
+
+.amazon-state-sequence figure > span {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  color: #a5a5a0;
+  font-size: clamp(10px, 0.75vw, 14px);
+}
+
+.amazon-state-sequence img {
+  display: block;
+  width: 100%;
+  height: clamp(360px, 39vw, 730px);
+  object-fit: contain;
+}
+
+.amazon-state-sequence figcaption {
+  margin-top: 22px;
+  font-size: clamp(12px, 1vw, 19px);
+  text-align: center;
+}
+
+.amazon-design-rationale {
+  margin-top: clamp(75px, 8vw, 145px);
+  padding: clamp(42px, 5vw, 85px);
+  border-radius: clamp(24px, 3vw, 48px);
+  background: var(--amazon-green-soft);
+}
+
+.amazon-rationale-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(45px, 7vw, 130px);
+  margin-top: clamp(35px, 4vw, 72px);
+}
+
+.amazon-rationale-grid h3 {
+  margin: 0;
+  color: var(--amazon-green);
+  font-size: clamp(34px, 4vw, 74px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1.02;
+}
+
+.amazon-rationale-grid p {
+  margin: 0;
+  padding: clamp(18px, 2vw, 32px) 0;
+  border-top: 1px solid #bfdcc8;
+  color: #4e6255;
+  font-size: clamp(13px, 1vw, 19px);
+  line-height: 1.5;
+}
+
+.amazon-rationale-grid p:last-child {
+  border-bottom: 1px solid #bfdcc8;
+}
+
+.amazon-screen-gallery {
+  display: flex;
+  gap: clamp(16px, 2vw, 32px);
+  margin-top: clamp(65px, 7vw, 120px);
+  padding: clamp(30px, 4vw, 70px);
+  overflow-x: auto;
+  border-radius: clamp(24px, 3vw, 48px);
+  background: #f5f5f3;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: #b8b8b3 transparent;
+  scrollbar-width: thin;
+}
+
+.amazon-screen-gallery figure {
+  flex: 0 0 clamp(230px, 24vw, 430px);
+  margin: 0;
+  padding: clamp(18px, 2vw, 34px);
+  border-radius: clamp(16px, 2vw, 28px);
+  background: #fff;
+  scroll-snap-align: start;
+}
+
+.amazon-screen-gallery img {
+  display: block;
+  width: 100%;
+  height: clamp(460px, 51vw, 900px);
+  object-fit: contain;
+}
+
+.amazon-screen-gallery figcaption {
+  margin-top: 20px;
+  color: #6f7377;
+  font-size: clamp(12px, 0.9vw, 17px);
+  text-align: center;
+}
+
+.amazon-edge-states {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 0.7fr;
+  align-items: center;
+  gap: clamp(28px, 4vw, 70px);
+  margin-top: clamp(100px, 11vw, 190px);
+}
+
+.amazon-edge-states > div h3 {
+  max-width: 600px;
+  margin: 18px 0 24px;
+  font-size: clamp(34px, 3.5vw, 66px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.amazon-edge-states > div > p:last-child {
+  max-width: 560px;
+  margin: 0;
+  color: var(--amazon-muted);
+  font-size: clamp(13px, 1vw, 19px);
+  line-height: 1.55;
+}
+
+.amazon-edge-states figure {
+  margin: 0;
+  padding: clamp(18px, 2vw, 30px);
+  border-radius: clamp(18px, 2vw, 30px);
+  background: var(--amazon-yellow-soft);
+}
+
+.amazon-edge-states img {
+  display: block;
+  width: 100%;
+  height: clamp(430px, 42vw, 760px);
+  object-fit: contain;
+}
+
+.amazon-edge-states figcaption {
+  margin-top: 18px;
+  color: #77776f;
+  font-size: clamp(11px, 0.8vw, 15px);
+  text-align: center;
+}
+
+.amazon-desktop {
+  margin: clamp(100px, 11vw, 190px) 0 0;
+}
+
+.amazon-desktop figcaption {
+  margin-bottom: clamp(28px, 3vw, 50px);
+  font-size: clamp(20px, 2vw, 38px);
+  letter-spacing: -0.035em;
+}
+
+.amazon-desktop img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: clamp(16px, 2vw, 32px);
+}
+
+.amazon-content-design {
+  display: grid;
+  grid-template-columns: minmax(270px, 0.7fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: clamp(55px, 8vw, 145px);
+  padding: clamp(45px, 5vw, 90px);
+  border-radius: clamp(24px, 3vw, 48px);
+  background: #faf9f6;
+}
+
+.amazon-content-design figure img {
+  border-radius: 18px;
+}
+
+.amazon-impact {
+  padding-top: clamp(35px, 4vw, 70px);
+}
+
+.amazon-impact-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(60px, 6vw, 110px);
+  border-block: 1px solid var(--amazon-line);
+}
+
+.amazon-impact-metrics article {
+  padding: clamp(32px, 4vw, 68px);
+  border-left: 1px solid var(--amazon-line);
+}
+
+.amazon-impact-metrics article:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.amazon-impact-metrics span,
+.amazon-impact-metrics strong {
+  display: block;
+}
+
+.amazon-impact-metrics span {
+  min-height: 2.8em;
+  color: #8b8f92;
+  font-size: clamp(11px, 0.9vw, 17px);
+  line-height: 1.4;
+}
+
+.amazon-impact-metrics strong {
+  margin-top: 18px;
+  font-size: clamp(26px, 3vw, 56px);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  white-space: nowrap;
+}
+
+.amazon-impact figure {
+  margin-top: clamp(60px, 6vw, 110px);
+}
+
+@media (max-width: 900px) {
+  .amazon-insight-layout,
+  .amazon-rationale-grid,
+  .amazon-content-design {
+    grid-template-columns: 1fr;
+  }
+
+  .amazon-state-sequence {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .amazon-edge-states {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .amazon-edge-states > div {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 620px) {
+  .amazon-project-facts,
+  .amazon-metrics,
+  .amazon-principles,
+  .amazon-impact-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .amazon-project-facts div,
+  .amazon-project-facts div:first-child,
+  .amazon-metrics article,
+  .amazon-metrics article:first-child,
+  .amazon-impact-metrics article,
+  .amazon-impact-metrics article:first-child {
+    padding-right: 0;
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--amazon-line);
+  }
+
+  .amazon-project-facts div:first-child,
+  .amazon-metrics article:first-child,
+  .amazon-impact-metrics article:first-child {
+    border-top: 0;
+  }
+
+  .amazon-metrics article {
+    min-height: 96px;
+  }
+
+  .amazon-story {
+    margin-inline: -18px;
+  }
+
+  .amazon-story-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .amazon-story-cards article {
+    flex: 0 0 84%;
+    scroll-snap-align: center;
+  }
+
+  .amazon-wide-figure figcaption {
+    display: block;
+  }
+
+  .amazon-wide-figure figcaption strong {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .amazon-opportunity {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .amazon-opportunity-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .amazon-opportunity-number {
+    line-height: 0.9;
+  }
+
+  .amazon-principles article {
+    min-height: 210px;
+  }
+
+  .amazon-state-sequence {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .amazon-state-sequence figure {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+  }
+
+  .amazon-edge-states {
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .amazon-edge-states > div,
+  .amazon-edge-states figure {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+  }
+
+  .amazon-content-design {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .amazon-impact-metrics span {
+    min-height: 0;
+  }
+}
+
+/* Amazon Pay case study rebuilt from the supplied PDF */
+.amazon-pdf-case-study {
+  --amazon-pdf-purple: #3d2c8d;
+  --amazon-pdf-note: rgba(213, 161, 242, 0.24);
+  --amazon-pdf-copy: #5f6368;
+}
+
+.amazon-pdf-section {
+  margin-top: clamp(90px, 9vw, 170px);
+}
+
+.amazon-pdf-section h2 {
+  margin: 0 0 clamp(28px, 3vw, 54px);
+  font-size: clamp(38px, 4.2vw, 78px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1.04;
+}
+
+.amazon-pdf-section h3,
+.amazon-pdf-section figcaption {
+  color: var(--amazon-pdf-purple);
+  font-weight: 400;
+}
+
+.amazon-pdf-section h3 {
+  margin: 0 0 clamp(22px, 2vw, 38px);
+  font-size: clamp(20px, 1.7vw, 31px);
+}
+
+.amazon-pdf-intro,
+.amazon-pdf-lead {
+  max-width: 1180px;
+  margin: 0 0 clamp(45px, 5vw, 88px);
+  color: var(--amazon-pdf-copy);
+  font-size: clamp(15px, 1.2vw, 22px);
+  line-height: 1.6;
+}
+
+.amazon-pdf-lead {
+  max-width: 1450px;
+  color: var(--amazon-ink);
+  font-size: clamp(21px, 2.15vw, 40px);
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+}
+
+.amazon-pdf-section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.amazon-pdf-wide-image {
+  width: 100%;
+}
+
+.amazon-pdf-contained-image {
+  width: min(100%, 1400px);
+  margin: 0 auto;
+}
+
+.amazon-pdf-research-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(190px, 0.55fr) minmax(190px, 0.65fr);
+  align-items: start;
+  gap: clamp(30px, 4vw, 72px);
+}
+
+.amazon-pdf-research-copy {
+  display: grid;
+  gap: clamp(20px, 2vw, 34px);
+}
+
+.amazon-pdf-research-copy p {
+  margin: 0;
+  color: var(--amazon-pdf-copy);
+  font-size: clamp(13px, 1vw, 19px);
+  line-height: 1.55;
+}
+
+.amazon-pdf-research-copy img {
+  margin-top: clamp(20px, 2vw, 36px);
+}
+
+.amazon-pdf-research-layout > img {
+  width: min(100%, 360px);
+  margin: 0 auto;
+}
+
+.amazon-pdf-research-screens {
+  display: grid;
+  justify-items: center;
+  gap: clamp(30px, 4vw, 72px);
+}
+
+.amazon-pdf-research-screens img {
+  width: min(100%, 300px);
+}
+
+.amazon-pdf-goal p {
+  margin: 0 0 clamp(50px, 5vw, 90px);
+  color: #aaa;
+  font-size: clamp(27px, 3vw, 56px);
+  line-height: 1.25;
+}
+
+.amazon-pdf-goal strong {
+  color: #4c7062;
+  font-weight: 400;
+}
+
+.amazon-pdf-goal img {
+  width: min(72%, 950px);
+  margin: 0 auto;
+}
+
+.amazon-pdf-process {
+  display: grid;
+  gap: clamp(45px, 5vw, 90px);
+}
+
+.amazon-pdf-process figure,
+.amazon-pdf-phone-grid figure,
+.amazon-pdf-screen-gallery figure,
+.amazon-pdf-desktop-grid figure {
+  margin: 0;
+}
+
+.amazon-pdf-process figcaption,
+.amazon-pdf-phone-grid figcaption,
+.amazon-pdf-screen-gallery figcaption,
+.amazon-pdf-desktop-grid figcaption {
+  margin-bottom: clamp(18px, 2vw, 34px);
+  font-size: clamp(15px, 1.2vw, 22px);
+  text-align: center;
+}
+
+.amazon-pdf-process img {
+  width: min(100%, 1500px);
+  margin: 0 auto;
+}
+
+.amazon-pdf-mom {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  font-size: clamp(14px, 1vw, 18px);
+  text-align: center;
+}
+
+.amazon-pdf-mom::before,
+.amazon-pdf-mom::after {
+  height: 1px;
+  background: #d4d4d4;
+  content: "";
+  flex: 1;
+}
+
+.amazon-pdf-phone-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(24px, 3vw, 54px);
+}
+
+.amazon-pdf-phone-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.amazon-pdf-phone-grid-four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.amazon-pdf-design-video {
+  display: grid;
+  width: 100%;
+  place-items: center;
+}
+
+.amazon-pdf-section .amazon-pdf-compact-title {
+  margin-bottom: clamp(20px, 3vw, 54px);
+  font-size: clamp(10px, 0.65vw, 13px);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.3;
+}
+
+.amazon-pdf-design-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.amazon-pdf-phone.amazon-pdf-video-phone {
+  width: clamp(250px, 32vw, 330px);
+  max-width: 330px;
+  background: linear-gradient(145deg, #5d5952, #c8c1b6 44%, #403d38 100%);
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55);
+}
+
+.amazon-pdf-phone.amazon-pdf-video-phone::before {
+  top: 16px;
+  width: 31%;
+  height: 25px;
+  background: #050505;
+}
+
+.amazon-pdf-video-phone-screen {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.amazon-pdf-video-phone-screen iframe {
+  position: absolute;
+  top: -2%;
+  left: -150%;
+  width: 400%;
+  height: 104%;
+}
+
+.amazon-design-video-carousel .amazon-pdf-video-phone {
+  width: 100%;
+}
+
+.amazon-pdf-phone-grid figure,
+.amazon-pdf-phone-grid > img {
+  min-width: 0;
+}
+
+.amazon-pdf-phone-grid img {
+  width: 100%;
+  max-height: 770px;
+  object-fit: contain;
+}
+
+.amazon-pdf-phone-grid-four img {
+  height: clamp(420px, 42vw, 760px);
+}
+
+.amazon-pdf-note {
+  box-sizing: border-box;
+  padding: clamp(28px, 3.5vw, 62px);
+  border-radius: clamp(24px, 3vw, 46px);
+  background: var(--amazon-pdf-note);
+}
+
+.amazon-pdf-note p,
+.amazon-pdf-note li {
+  color: #4f4858;
+  font-size: clamp(13px, 1vw, 18px);
+  line-height: 1.6;
+}
+
+.amazon-pdf-note p {
+  margin: 0 0 18px;
+}
+
+.amazon-pdf-note p:last-child {
+  margin-bottom: 0;
+}
+
+.amazon-pdf-note ul {
+  margin: 0;
+  padding-left: 1.3em;
+}
+
+.amazon-pdf-note li {
+  margin-bottom: 14px;
+}
+
+.amazon-pdf-note li:last-child {
+  margin-bottom: 0;
+}
+
+.amazon-pdf-section > .amazon-pdf-note {
+  margin-top: clamp(60px, 7vw, 120px);
+}
+
+.amazon-pdf-screen-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 48px);
+  padding: clamp(30px, 4vw, 72px);
+  border-radius: clamp(24px, 3vw, 48px);
+  background: #f6f6f4;
+}
+
+.amazon-pdf-screen-gallery figure {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: clamp(16px, 1.8vw, 30px);
+  border-radius: clamp(16px, 1.6vw, 28px);
+  background: #fff;
+}
+
+.amazon-pdf-screen-gallery img {
+  width: 100%;
+  height: clamp(390px, 33vw, 610px);
+  object-fit: contain;
+}
+
+.amazon-pdf-split-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.8fr);
+  align-items: center;
+  gap: clamp(36px, 5vw, 90px);
+}
+
+.amazon-rewards-impact-layout {
+  grid-template-columns: minmax(250px, 330px);
+  justify-content: center;
+}
+
+.amazon-pdf-wireframe-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.8fr);
+  align-items: center;
+  gap: clamp(36px, 5vw, 90px);
+  padding: clamp(55px, 6vw, 105px) 0;
+  border-top: 1px solid #e6e6e4;
+}
+
+.amazon-pdf-wireframe-row:last-child {
+  border-bottom: 1px solid #e6e6e4;
+}
+
+.amazon-pdf-wireframe-row-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.amazon-pdf-desktop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 52px);
+}
+
+.amazon-desktop-video {
+  width: min(100%, 1120px);
+  margin: clamp(32px, 5vw, 72px) auto 0;
+}
+
+.amazon-desktop-video-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1920 / 1032;
+  padding: clamp(8px, 1vw, 14px);
+  border: 2px solid #555;
+  border-radius: clamp(12px, 1.6vw, 22px);
+  background: #1b1b1b;
+  box-shadow: 0 28px 65px rgb(0 0 0 / 16%);
+}
+
+.amazon-desktop-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: clamp(5px, 0.7vw, 10px);
+  background: #000;
+}
+
+.amazon-desktop-video-stand {
+  width: clamp(70px, 10vw, 140px);
+  height: clamp(25px, 3.5vw, 48px);
+  margin: 0 auto;
+  background: linear-gradient(90deg, #aaa, #e4e4e4 50%, #aaa);
+  clip-path: polygon(35% 0, 65% 0, 78% 100%, 22% 100%);
+}
+
+.amazon-desktop-video-base {
+  width: clamp(170px, 24vw, 310px);
+  height: clamp(8px, 1vw, 13px);
+  margin: 0 auto;
+  border-radius: 999px 999px 4px 4px;
+  background: linear-gradient(#d9d9d9, #8e8e8e);
+}
+
+.amazon-pdf-desktop-detail {
+  margin-top: clamp(60px, 7vw, 120px);
+}
+
+.amazon-pdf-desktop-detail > img {
+  width: 100%;
+}
+
+.amazon-pdf-metrics {
+  padding-bottom: clamp(30px, 4vw, 70px);
+}
+
+.amazon-impact-panel {
+  padding: clamp(48px, 6vw, 96px) clamp(20px, 2.5vw, 40px) clamp(42px, 5vw, 80px);
+  background: #fbfbfc;
+}
+
+.amazon-pdf-section .amazon-impact-panel > .fixed-impact-title {
+  margin: 0 0 clamp(36px, 4vw, 64px);
+  color: #111;
+  font-size: clamp(36px, 4vw, 64px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.amazon-impact-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.5vw, 40px);
+}
+
+.amazon-impact-image-card {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  padding-bottom: clamp(24px, 3vw, 40px);
+  overflow: hidden;
+  border-radius: clamp(10px, 1.4vw, 22px);
+  background: #fff;
+}
+
+.amazon-impact-image-grid img {
+  width: 100%;
+}
+
+.amazon-pdf-section .amazon-impact-image-card figcaption {
+  position: absolute;
+  z-index: 1;
+  inset: 72% 4% 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding-top: 2px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 -14px 0 #fff;
+  color: #6f6f6f;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.amazon-impact-card-meta {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .amazon-pdf-research-layout,
+  .amazon-pdf-split-section,
+  .amazon-pdf-wireframe-row {
+    grid-template-columns: 1fr;
+  }
+
+  .amazon-pdf-research-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .amazon-pdf-research-copy {
+    grid-column: 1 / -1;
+  }
+
+  .amazon-pdf-screen-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .amazon-pdf-section {
+    margin-top: 80px;
+  }
+
+  .amazon-impact-image-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .amazon-impact-image-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .amazon-impact-image-card {
+    flex: 0 0 85%;
+    width: 85%;
+    scroll-snap-align: start;
+  }
+
+  .amazon-pdf-research-layout,
+  .amazon-pdf-desktop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amazon-pdf-research-copy {
+    grid-column: auto;
+  }
+
+  .amazon-pdf-phone-grid-four,
+  .amazon-pdf-screen-gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .amazon-pdf-phone-grid-four figure,
+  .amazon-pdf-screen-gallery figure {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+  }
+
+  .amazon-pdf-phone-grid-three {
+    gap: 12px;
+  }
+
+  .amazon-pdf-goal img {
+    width: 100%;
+  }
+
+  .amazon-pdf-note {
+    border-radius: 24px;
+  }
+}
+
+/* PDF-matched opening narrative */
+.amazon-pdf-case-study {
+  --amazon-pdf-ink: #2c2c2c;
+  --amazon-pdf-muted: #8a8a8a;
+  width: min(calc(100% - clamp(40px, 4.5vw, 88px)), 1760px);
+  padding-top: clamp(56px, 6.8vw, 120px);
+  color: var(--amazon-pdf-ink);
+}
+
+.amazon-pdf-case-study .amazon-hero {
+  min-height: clamp(120px, 10.8vw, 190px);
+}
+
+.amazon-pdf-case-study .amazon-hero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(34px, 3.05vw, 54px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.amazon-pdf-case-study .amazon-hero .case-study-summary {
+  max-width: 760px;
+  color: #a0a0a0;
+  font-size: clamp(11px, 0.72vw, 14px);
+  line-height: 1.45;
+}
+
+.amazon-pdf-case-study .amazon-pdf-section {
+  margin-top: clamp(70px, 6vw, 115px);
+}
+
+.amazon-pdf-story {
+  box-sizing: border-box;
+  width: 100vw;
+  margin-top: 0 !important;
+  margin-inline: calc(50% - 50vw);
+  padding: clamp(36px, 2.4vw, 44px) max(clamp(20px, 2.4vw, 44px), calc((100vw - 1760px) / 2));
+  background: #fafafa;
+}
+
+.amazon-pdf-story .amazon-pdf-kicker {
+  margin-bottom: clamp(22px, 1.65vw, 29px);
+  color: #5d5d5d;
+}
+
+.amazon-pdf-story .amazon-pdf-intro {
+  max-width: 1700px;
+  margin-bottom: clamp(45px, 5vw, 88px);
+  color: #747474;
+  font-size: clamp(11px, 0.82vw, 15px);
+  line-height: 1.5;
+}
+
+.amazon-pdf-story-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 4.5vw, 86px);
+}
+
+.amazon-pdf-story-cards article {
+  min-width: 0;
+  padding: clamp(18px, 1.6vw, 28px) clamp(18px, 2.5vw, 44px) clamp(24px, 2.3vw, 40px);
+  overflow: hidden;
+  border-radius: clamp(12px, 1.35vw, 24px);
+  background: #fff;
+}
+
+.amazon-pdf-story-image {
+  --story-image-radius: clamp(28px, 2.2vw, 40px);
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.5;
+  overflow: hidden;
+  border-top-left-radius: var(--story-image-radius);
+  border-top-right-radius: var(--story-image-radius);
+  border-bottom-right-radius: var(--story-image-radius);
+  border-bottom-left-radius: var(--story-image-radius);
+  object-fit: cover;
+  clip-path: inset(0 round var(--story-image-radius));
+  -webkit-clip-path: inset(0 round var(--story-image-radius));
+}
+
+.amazon-pdf-story-cards h2 {
+  max-width: 390px;
+  margin: clamp(24px, 2.3vw, 40px) 0 0;
+  font-size: clamp(14px, 1.35vw, 24px);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+}
+
+.amazon-pdf-kicker {
+  margin: 0 0 clamp(45px, 5vw, 90px);
+  color: #777;
+  font-size: clamp(10px, 0.65vw, 13px);
+}
+
+.amazon-pdf-current-flow .amazon-pdf-kicker {
+  margin-bottom: clamp(20px, 3vw, 54px);
+}
+
+.amazon-pdf-analysis {
+  position: relative;
+  margin-top: clamp(20px, 2vw, 36px);
+  padding-bottom: clamp(50px, 5vw, 90px);
+}
+
+.amazon-pdf-analysis .amazon-pdf-research-layout {
+  position: relative;
+  grid-template-columns: minmax(0, 1fr) clamp(200px, 22vw, 390px);
+  align-items: stretch;
+  gap: clamp(38px, 4vw, 72px);
+  width: min(76%, 1375px);
+  margin: 0 0 0 13%;
+}
+
+.amazon-pdf-analysis .amazon-pdf-research-copy {
+  display: grid;
+  align-content: space-between;
+  gap: 0;
+  margin: 0;
+  padding: clamp(30px, 3vw, 54px);
+  border: 1px solid #d5d5d5;
+  border-radius: clamp(12px, 1vw, 18px);
+  list-style: none;
+  counter-reset: insight;
+}
+
+.amazon-pdf-analysis .amazon-pdf-research-copy li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: start;
+  gap: 12px;
+  margin: 0;
+  padding: 3px 0;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.45;
+  counter-increment: insight;
+}
+
+.amazon-pdf-analysis .amazon-pdf-research-copy li::before {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  content: counter(insight, decimal-leading-zero);
+  font-size: 12px;
+  margin-top: 1px;
+  place-items: center;
+}
+
+.amazon-pdf-analysis-visuals {
+  display: block;
+}
+
+.amazon-pdf-phone {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 390px;
+  padding: clamp(6px, 0.55vw, 10px);
+  border: 1px solid #5f6062;
+  border-radius: clamp(28px, 2.35vw, 42px);
+  background: #1d1d1f;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.16);
+}
+
+.amazon-pdf-phone::before {
+  position: absolute;
+  top: clamp(10px, 0.85vw, 15px);
+  left: 50%;
+  z-index: 1;
+  width: 30%;
+  height: clamp(6px, 0.48vw, 9px);
+  border-radius: 999px;
+  background: #202020;
+  content: "";
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.amazon-pdf-phone-screen {
+  aspect-ratio: 9 / 19.5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: clamp(23px, 1.9vw, 34px);
+  background: #fff;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  touch-action: pan-y;
+}
+
+.amazon-pdf-phone-screen::-webkit-scrollbar {
+  display: none;
+}
+
+.amazon-pdf-phone-screen:focus-visible {
+  outline: 3px solid #6c63ff;
+  outline-offset: 4px;
+}
+
+.amazon-pdf-phone-screen img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  transform: translateX(3px);
+}
+
+.amazon-use-case-carousel {
+  position: relative;
+  margin-top: clamp(36px, 5vw, 76px);
+}
+
+.amazon-pdf-screen-gallery.amazon-use-case-carousel-viewport {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.amazon-use-case-carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.amazon-use-case-carousel-track {
+  display: flex;
+  width: max-content;
+  gap: clamp(28px, 5vw, 70px);
+  padding-inline: calc((min(100vw - 46px, 1760px) - clamp(250px, 32vw, 330px)) / 2);
+}
+
+.amazon-use-case-carousel .amazon-use-case-slide {
+  box-sizing: border-box;
+  flex: 0 0 clamp(250px, 32vw, 330px);
+  width: clamp(250px, 32vw, 330px);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 0;
+  scroll-snap-align: center;
+  transform: scale(0.84);
+  transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.amazon-use-case-carousel .amazon-use-case-slide.is-after {
+  opacity: 0.28;
+}
+
+.amazon-use-case-carousel .amazon-use-case-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.amazon-use-case-carousel .amazon-use-case-slide figcaption {
+  display: none;
+}
+
+.amazon-pdf-phone.amazon-use-case-phone {
+  width: 100%;
+  max-width: 330px;
+  margin: 0;
+  background: linear-gradient(145deg, #5d5952, #c8c1b6 44%, #403d38 100%);
+  box-shadow:
+    0 26px 54px rgba(0, 0, 0, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55);
+}
+
+.amazon-pdf-phone.amazon-use-case-phone::before {
+  top: 16px;
+  width: 31%;
+  height: 25px;
+  background: #050505;
+}
+
+.amazon-use-case-phone-screen {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.amazon-use-case-phone-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  object-position: top center;
+  transform: none;
+}
+
+.amazon-confetti-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.amazon-confetti-particle {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  width: var(--particle-width);
+  height: var(--particle-height);
+  border-radius: 2px;
+  background: var(--particle-color);
+  opacity: 0;
+  transform-origin: center;
+}
+
+.amazon-confetti-particle.is-circle {
+  border-radius: 50%;
+}
+
+.amazon-wireframe-phone-screen.show-confetti .amazon-confetti-particle {
+  animation: amazon-confetti-explosion var(--particle-duration)
+    cubic-bezier(0.12, 0.68, 0.2, 1) var(--particle-delay) both;
+}
+
+.amazon-wireframe-phone-screen img {
+  object-fit: cover;
+}
+
+.amazon-wireframe-phone-screen {
+  cursor: pointer;
+}
+
+@keyframes amazon-confetti-explosion {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.15) rotate(0deg);
+  }
+
+  7% {
+    opacity: 1;
+  }
+
+  56% {
+    opacity: 1;
+    transform:
+      translate(calc(-50% + var(--particle-x)), var(--particle-y))
+      scale(1)
+      rotate(var(--particle-rotation));
+  }
+
+  100% {
+    opacity: 0;
+    transform:
+      translate(calc(-50% + var(--particle-x)), var(--particle-y))
+      scale(0.88)
+      rotate(var(--particle-rotation));
+  }
+}
+
+.amazon-use-case-phone-screen-scrollable {
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  touch-action: pan-y;
+}
+
+.amazon-use-case-phone-screen-scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.amazon-use-case-phone-screen-scrollable::after {
+  display: none;
+}
+
+.amazon-use-case-phone-screen-scrollable img {
+  height: auto;
+  object-fit: initial;
+}
+
+.amazon-use-case-control {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  color: #262626;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  place-items: center;
+  transform: translateY(-50%);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.amazon-use-case-control:hover {
+  background: #f2f2f2;
+  transform: translateY(-50%) scale(1.06);
+}
+
+.amazon-use-case-control-prev {
+  left: 8px;
+}
+
+.amazon-use-case-control-next {
+  right: 8px;
+}
+
+.amazon-use-case-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.amazon-use-case-pagination button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 1px solid #8e8e8e;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.amazon-wireframe-carousel .amazon-use-case-pagination button {
+  transition:
+    width 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.amazon-use-case-pagination button.is-active {
+  border-color: #30238f;
+  background: #30238f;
+}
+
+.amazon-wireframe-carousel .amazon-use-case-pagination button.is-active {
+  width: 24px;
+  border-radius: 999px;
+}
+
+.amazon-use-case-status {
+  margin: 14px 0 0;
+  color: #777;
+  font-size: 12px;
+  text-align: center;
+}
+
+.amazon-rewards-prototype {
+  display: grid;
+  justify-items: center;
+}
+
+.amazon-rewards-prototype-category {
+  margin: 0 0 18px;
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.amazon-pdf-phone.amazon-rewards-prototype-phone {
+  width: clamp(250px, 32vw, 330px);
+  max-width: 330px;
+  margin: 0;
+  background: linear-gradient(145deg, #5d5952, #c8c1b6 44%, #403d38 100%);
+}
+
+.amazon-pdf-phone.amazon-rewards-prototype-phone::before {
+  top: 16px;
+  width: 31%;
+  height: 25px;
+  background: #050505;
+}
+
+.amazon-rewards-prototype-screen {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.amazon-rewards-prototype-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transform: none;
+  transition: opacity 180ms ease;
+}
+
+.amazon-rewards-prototype-screen img[src*="rewards-presence-phone.png"] {
+  width: calc(100% + 4px);
+  max-width: none;
+  margin-left: -2px;
+}
+
+.amazon-rewards-prototype-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.amazon-rewards-prototype-controls > button {
+  display: none;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  background: #fff;
+  color: #262626;
+  font: inherit;
+  cursor: pointer;
+  place-items: center;
+}
+
+.amazon-rewards-prototype-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.amazon-rewards-prototype-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 1px solid #8e8e8e;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.amazon-rewards-prototype-dots button.is-active {
+  border-color: #30238f;
+  background: #30238f;
+}
+
+[data-rewards-prototype="wireframes"] .amazon-rewards-prototype-dots button:nth-child(4),
+[data-rewards-prototype="wireframes"] .amazon-rewards-prototype-dots button:nth-child(7) {
+  margin-left: 10px;
+}
+
+.amazon-rewards-prototype-status {
+  display: none;
+}
+
+.amazon-pdf-analysis .amazon-pdf-research-screens {
+  display: none;
+}
+
+.amazon-pdf-analysis-person {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: clamp(125px, 14vw, 250px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: url("images/amazon-pay-ux-research/story-calling-support.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: circle(50%);
+  transform: translate(-65%, 74%);
+}
+
+.amazon-pdf-voices {
+  margin-top: clamp(115px, 11vw, 200px);
+  overflow: hidden;
+  padding-block: 8px;
+  mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
+}
+
+.amazon-pdf-voices-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 20px 4%;
+  padding: 8px 14px;
+  border: 1px solid #dedede;
+  border-radius: 999px;
+  background: #fff;
+  color: #707070;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.amazon-pdf-voices-control:hover {
+  border-color: #bcbcbc;
+  color: #282828;
+}
+
+.amazon-pdf-voices-control:focus-visible {
+  outline: 3px solid #6c63ff;
+  outline-offset: 3px;
+}
+
+.amazon-pdf-voices-control:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.amazon-pdf-voices-control-icon {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid currentColor;
+}
+
+.amazon-pdf-voices-control.is-playing .amazon-pdf-voices-control-icon {
+  position: relative;
+  width: 8px;
+  height: 10px;
+  border: 0;
+}
+
+.amazon-pdf-voices-control.is-playing .amazon-pdf-voices-control-icon::before,
+.amazon-pdf-voices-control.is-playing .amazon-pdf-voices-control-icon::after {
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 10px;
+  border-radius: 1px;
+  background: currentColor;
+  content: "";
+}
+
+.amazon-pdf-voices-control.is-playing .amazon-pdf-voices-control-icon::before {
+  left: 0;
+}
+
+.amazon-pdf-voices-control.is-playing .amazon-pdf-voices-control-icon::after {
+  right: 0;
+}
+
+.amazon-pdf-voices-track {
+  --voice-gap: clamp(42px, 5vw, 90px);
+  display: flex;
+  width: max-content;
+  gap: var(--voice-gap);
+  animation: amazon-voices-marquee 34s linear infinite;
+  will-change: transform;
+}
+
+.amazon-pdf-voices blockquote {
+  flex: 0 0 clamp(155px, 15vw, 270px);
+  margin: 0;
+  color: #8b8b8b;
+  font-size: clamp(10px, 0.72vw, 14px);
+  font-style: italic;
+  line-height: 1.4;
+  transition: color 180ms ease;
+}
+
+.amazon-pdf-voices blockquote.is-speaking {
+  color: #282828;
+}
+
+.amazon-pdf-voices:hover .amazon-pdf-voices-track {
+  animation-play-state: paused;
+}
+
+@keyframes amazon-voices-marquee {
+  from {
+    transform: translateX(calc(-50% - (var(--voice-gap) / 2)));
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .amazon-pdf-voices-track {
+    width: auto;
+    flex-wrap: wrap;
+    animation: none;
+    transform: none;
+  }
+
+  .amazon-pdf-voices blockquote[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+.amazon-pdf-mapping-stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: clamp(500px, 45vw, 820px);
+  gap: clamp(60px, 9vw, 170px);
+}
+
+.amazon-pdf-mapping .mapping-label {
+  margin-top: 0;
+}
+
+.amazon-pdf-mapping .problem-note h2 {
+  margin: 4px 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: normal;
+}
+
+.amazon-pdf-mapping .problem-note.is-active h2 {
+  margin-bottom: 12px;
+}
+
+.amazon-pdf-mapping .design-opportunity h2 {
+  margin: 6px 0 14px;
+  font-size: clamp(32px, 3vw, 45px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.amazon-pdf-problems {
+  position: relative;
+  min-height: 100%;
+}
+
+.amazon-pdf-problem {
+  position: absolute;
+  max-width: 270px;
+}
+
+.amazon-pdf-problem-one {
+  top: 14%;
+  right: 6%;
+}
+
+.amazon-pdf-problem-two {
+  bottom: 14%;
+  left: 12%;
+  opacity: 0.16;
+}
+
+.amazon-pdf-problem-five {
+  top: 4%;
+  left: 14%;
+  opacity: 0.08;
+}
+
+.amazon-pdf-problem p,
+.amazon-pdf-opportunity p {
+  margin: 0 0 12px;
+  color: #9a9a9a;
+  font-size: clamp(9px, 0.6vw, 12px);
+}
+
+.amazon-pdf-problem h2 {
+  margin: 0 0 14px;
+  font-size: clamp(15px, 1.2vw, 23px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.amazon-pdf-problem span,
+.amazon-pdf-opportunity span {
+  display: block;
+  color: #aaa;
+  font-size: clamp(9px, 0.62vw, 12px);
+  line-height: 1.45;
+}
+
+.amazon-pdf-opportunity {
+  align-self: center;
+  max-width: 610px;
+}
+
+.amazon-pdf-opportunity h2 {
+  margin: 0 0 22px;
+  font-size: clamp(31px, 3.25vw, 62px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1.08;
+}
+
+.amazon-pdf-opportunity span {
+  max-width: 570px;
+  font-size: clamp(10px, 0.7vw, 14px);
+}
+
+.amazon-pdf-process-section > h2 {
+  margin: 0 0 clamp(58px, 6vw, 110px);
+  font-size: clamp(18px, 1.45vw, 27px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.amazon-pdf-process-section .amazon-pdf-kicker {
+  margin-bottom: 0;
+}
+
+.amazon-pdf-case-study .amazon-section-heading {
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.3;
+}
+
+.amazon-pdf-process-section .amazon-pdf-process {
+  gap: clamp(45px, 5vw, 90px);
+}
+
+.amazon-pdf-process-section .amazon-pdf-process img {
+  width: 100%;
+  max-width: none;
+}
+
+.amazon-design-direction {
+  padding-block: clamp(24px, 2vw, 38px);
+}
+
+.amazon-design-direction .amazon-design-direction-kicker {
+  margin: 0 0 clamp(14px, 1.2vw, 22px);
+  color: #777;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.amazon-design-direction > h2 {
+  max-width: 1120px;
+  margin: 0;
+  color: #111;
+  font-size: clamp(48px, 6vw, 106px);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1.02;
+}
+
+.amazon-design-direction-divider {
+  width: 100%;
+  height: 1px;
+  margin: clamp(42px, 5vw, 88px) 0;
+  background: #d9d9d9;
+}
+
+.amazon-design-direction .amazon-design-direction-intro {
+  max-width: 800px;
+  margin: 0;
+  color: #9a9a9a;
+  font-size: clamp(20px, 1.8vw, 32px);
+  line-height: 1.4;
+}
+
+.amazon-design-direction-principles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(10px, 1vw, 18px);
+  margin-top: clamp(68px, 8vw, 140px);
+}
+
+.amazon-design-direction-principles article {
+  padding: 0;
+}
+
+.amazon-design-direction-principles h3 {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  color: #171717;
+  font-size: clamp(19px, 1.55vw, 28px);
+  line-height: 1.35;
+}
+
+.amazon-design-direction-principles h3 span {
+  flex: 0 0 auto;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@media (max-width: 900px) {
+  .amazon-pdf-analysis .amazon-pdf-research-layout {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .amazon-pdf-analysis .amazon-pdf-research-copy {
+    grid-column: auto;
+  }
+
+  .amazon-pdf-analysis-visuals {
+    width: min(100%, 620px);
+    margin: 0 auto;
+  }
+
+  .amazon-pdf-phone {
+    width: min(58%, 320px);
+    margin: 48px auto 0;
+  }
+
+  .amazon-pdf-analysis-person {
+    display: none;
+  }
+
+  .amazon-pdf-mapping-stage {
+    min-height: 560px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .amazon-pdf-case-study {
+    width: calc(100% - 36px);
+    padding-top: 40px;
+  }
+
+  .amazon-pdf-case-study .amazon-hero {
+    min-height: 180px;
+  }
+
+  .amazon-pdf-story {
+    padding: 60px 18px;
+  }
+
+  .amazon-pdf-story-cards {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .amazon-pdf-story-cards article {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+  }
+
+  .amazon-pdf-analysis .amazon-pdf-research-copy {
+    padding: 22px;
+  }
+
+  .amazon-pdf-analysis-visuals {
+    grid-template-columns: 1fr 0.7fr;
+    gap: 18px;
+  }
+
+  .amazon-pdf-mapping-stage {
+    display: block;
+    min-height: 0;
+  }
+
+  .amazon-pdf-problems {
+    display: grid;
+    gap: 26px;
+    min-height: 0;
+    margin-bottom: 72px;
+  }
+
+  .amazon-pdf-problem {
+    position: static;
+    max-width: 280px;
+  }
+
+  .amazon-pdf-problem-two,
+  .amazon-pdf-problem-five {
+    display: none;
+  }
+
+  .amazon-pdf-opportunity h2 br {
+    display: none;
+  }
+
+  .amazon-design-direction > h2 {
+    font-size: clamp(42px, 12vw, 64px);
+  }
+
+  .amazon-design-direction-principles {
+    grid-template-columns: 1fr;
   }
 }
