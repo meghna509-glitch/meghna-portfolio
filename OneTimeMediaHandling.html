@@ -267,8 +267,8 @@
               <div class="desktop-monitor-screen" tabindex="0" aria-label="Scrollable One Time Media Handling walkthrough">
                 <video
                   class="monitor-video"
+                  id="otmhVideo"
                   autoplay
-                  controls
                   loop
                   muted
                   playsinline
@@ -281,6 +281,21 @@
                   >
                   Your browser does not support the OTMH walkthrough video.
                 </video>
+                <div class="monitor-video-controls">
+                  <button type="button" class="monitor-video-btn" id="otmhPlayToggle" aria-label="Pause video">
+                    <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>
+                    <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5-13-7.5z"></path></svg>
+                  </button>
+                  <span class="monitor-video-time" id="otmhTime">0:00 / 0:00</span>
+                  <input type="range" class="monitor-video-seek" id="otmhSeek" min="0" max="100" step="0.1" value="0" aria-label="Seek video">
+                  <button type="button" class="monitor-video-btn" id="otmhMuteToggle" aria-label="Unmute video">
+                    <svg class="icon-unmuted" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"></path></svg>
+                    <svg class="icon-muted" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"></path><path d="M16.5 8.5l5 5m0-5l-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
+                  </button>
+                  <button type="button" class="monitor-video-btn" id="otmhFullscreenBtn" aria-label="View video fullscreen">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M16 3h3a2 2 0 0 1 2 2v3"></path><path d="M21 16v3a2 2 0 0 1-2 2h-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+                  </button>
+                </div>
               </div>
             </div>
             <div class="desktop-monitor-stand" aria-hidden="true"></div>
