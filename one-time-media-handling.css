@@ -665,6 +665,7 @@ main {
 }
 
 .desktop-monitor-screen {
+  position: relative;
   aspect-ratio: 16 / 9;
   overflow-x: hidden;
   overflow-y: auto;
@@ -682,6 +683,101 @@ main {
   margin-left: -4.96%;
   background: var(--cp-text);
   object-fit: contain;
+}
+
+.monitor-video-controls {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.monitor-video-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.monitor-video-btn:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.monitor-video-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.monitor-video-btn .icon-play {
+  display: none;
+}
+
+.monitor-video-btn.is-paused .icon-pause {
+  display: none;
+}
+
+.monitor-video-btn.is-paused .icon-play {
+  display: block;
+}
+
+.monitor-video-time {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.monitor-video-seek {
+  flex: 1 1 auto;
+  height: 4px;
+  margin: 0 4px;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.monitor-video-seek::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.monitor-video-seek::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.monitor-video-btn .icon-muted {
+  display: none;
+}
+
+.monitor-video-btn.is-muted .icon-unmuted {
+  display: none;
+}
+
+.monitor-video-btn.is-muted .icon-muted {
+  display: block;
 }
 
 .desktop-monitor-stand {
